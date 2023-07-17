@@ -12,15 +12,14 @@ screen.tracer(0)
 
 game_is_on = True
 snake = Snake()
-snake.create_snake()
 food = Food()
 scoreboard = Scoreboard()
 
 screen.listen()
-screen.onkeypress(snake.move_snake_up(), "a", )
-screen.onkey(snake.move_snake_down(), 'c')
-screen.onkey(snake.move_snake_left(), "d")
-screen.onkey(snake.move_snake_right(), "f")
+screen.onkey(snake.move_snake_up(), "Up")
+screen.onkey(snake.move_snake_down, "Down")
+screen.onkey(snake.move_snake_left, "Left")
+screen.onkey(snake.move_snake_right, "Right")
 
 
 while game_is_on:
